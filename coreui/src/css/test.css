@@ -1,0 +1,84 @@
+/* Hamburger Menu icon: */
+.menu_icon{
+    width:40px;
+    height:35px;
+    border: solid; 
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+.menu_icon_content{
+    width:30px;
+    height:5px;
+    background: black;
+    border-radius: 40%;
+}
+.menu_icon_content::before, .menu_icon_content::after{
+    content:'';
+    position: absolute;
+    width:30px;
+    height:5px;
+    background: black;
+    border-radius: 40%;
+}
+.menu_icon_content::before{
+    transform: translateY(-10px);
+}
+.menu_icon_content::after{
+    transform: translateY(10px);
+}
+#check{
+    position: absolute;
+    /* display: none; */
+}
+#check:checked ~ .navbar{
+    left:0px;
+}
+#check:checked ~ .menu_icon{
+    left:200px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ .cancel_icon{
+    left:220px;
+}
+/* Cancel icon in Navigation bar */
+.cancel_icon{
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left:-220px;
+    top: 20px;
+    z-index: 1;
+    background: #420125; 
+    transition-duration: 0.5s;   
+}
+.cancel_icon_content{
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+.cancel_icon_content::before{
+    content: '';
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.cancel_icon:hover{
+    transform: scale(1.25);
+}

@@ -1,0 +1,60 @@
+<html>
+    <style type="text/css">
+    
+    .cancel_icon{
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left:220px;
+    top: 20px;
+    z-index: 1;
+    background: #420125; 
+    transition-duration: 0.5s;   
+}
+.cancel_icon_content{
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+.cancel_icon_content::before{
+    content: '';
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.cancel_icon:hover{
+    transform: scale(1.25);
+}
+    </style>
+    <body style="margin-top: 0; margin-left: 0;">
+        <div class="cancel_icon">
+            <div class="cancel_icon_content"></div>
+        </div>
+        <div>
+            <!-- <div class="menu_icon">
+                <div class="menu_icon_content"></div>
+            </div> -->
+            <div id="name">
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+            </div>
+            <div id="password">
+                <label for="password">Password</label>
+                <input type="text" name="password" />
+            </div>
+            <div id="y">
+                Center
+            </div>
+        </div>
+    </body>
+    </script>
+</html>

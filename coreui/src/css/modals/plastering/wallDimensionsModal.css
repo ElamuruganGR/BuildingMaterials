@@ -1,0 +1,125 @@
+/* .wdm_grid_container{
+    height: 87.5%;
+    display: grid;
+    padding: 0% 7%;
+    grid-template-columns: 1fr;
+    row-gap: 0%;
+    grid-template-rows: repeat(3, 10%);
+    grid-auto-rows: 10%;
+    font-weight: bold;
+} */
+/* td{
+    border: solid black 1px;
+    width: 22.5%;
+    text-align: center;
+} */
+.plastering_wdm_container{
+    overflow-y: scroll;
+}
+.modal_heading{
+    height: 12.5%;
+    width: 100%;
+    background: aliceblue;
+    position: relative;
+    font-size: 120%;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    pointer-events: none;
+}
+.similarDimensionWalls{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.similarDimensionLabel{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.similarDimensionWalls label{
+    text-align: center;
+    width: 100%;
+}
+.similarDimensionWalls .colon{
+    width: 10%;
+    height: 10%;
+    align-self: center;
+    font-weight: 500;
+}
+.similarDimensionWalls select{
+    width: 45%;
+    height: 30px;
+    align-self: center;
+    border-radius: 50px;
+    background:#fde2e2;
+    text-align-last: center;
+    font-weight: 700;
+    outline: none;
+}
+.plasteringThicknessTable{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    border: none;
+    width: 90%;
+}
+.plasteringThicknessTable thead, .wallsDimensionsTable thead {
+    background: aliceblue;
+    color: orange;
+    font-weight: 700;
+}
+.row_heading{
+    font-weight: 500;
+}
+.plasteringThicknessTable tbody td, .wallsDimensionsTable tbody td {
+    background: #fde2e2;
+}
+.plasteringThicknessTable td, .wallsDimensionsTable td{
+    border: solid black 1px;
+    width: 22.5%;
+    text-align: center;
+}
+.cement_sand_ratio {
+    display: flex;
+    flex-direction: row;
+}
+.cement_sand_ratio input{
+    width: 40%;
+}
+.cement_sand_ratio .colon{
+    width: 10%;
+    text-align: center;
+    font-weight: 700;
+}
+td input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: #fde2e2;
+    text-align: center;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outner-spin-button{
+    opacity: 1;
+}
+.wallsDimensionsTable{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    border: none;
+    width: 90%;  
+}
+.modal_close{
+    margin-top: 7%;
+    margin-left: 5%;
+    /* transform: translateX(-50%); */
+}
+.modal_close .wdm_close_button{
+    width: 20%;
+    font-weight: 700;
+}

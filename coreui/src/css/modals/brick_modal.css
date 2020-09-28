@@ -1,0 +1,111 @@
+.b_modal_content{
+    width: 30%;
+    height: 60%;
+    transition-duration: 0.5s;
+}
+@media all and (max-width: 1000px){
+    .b_modal_content{
+        width: 35%;
+    }
+}
+@media all and (max-width: 800px){
+    .b_modal_content{
+        width: 40%;
+    }
+}
+@media all and (max-width: 700px){
+    .b_modal_content{
+        width: 45%;
+    }
+}
+@media all and (max-width: 600px){
+    .b_modal_content{
+        width: 50%;
+    }
+}
+@media all and (max-width: 550px){
+    .b_modal_content{
+        width: 55%;
+    }
+}
+@media all and (max-width: 500px){
+    .b_modal_content{
+        width: 60%;
+    }
+}
+@media all and (max-width: 450px){
+    .b_modal_content{
+        width: 65%;
+    }
+}
+@media all and (max-width: 400px){
+    .b_modal_content{
+        width: 75%;
+    }
+}
+@media all and (max-width: 350px){
+    .b_modal_content{
+        width: 85%;
+    }
+}
+@media all and (max-width: 300px){
+    .b_modal_content{
+        width: 90%;
+    }
+}
+@media all and (max-width: 250px){
+    .b_modal_content{
+        width: 100%;
+    }
+}
+.b_modal_heading{
+    /* width: 35vw; */
+    /* height: 10vh; */
+    width: 100%;
+    height: 12.5%;
+    background: aliceblue;
+    position: relative;
+    /* font-size: 2vw; */
+    font-size: 120%;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    pointer-events: none;
+}
+.bm_grid_container{
+    height: 87.5%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0% 10%;
+    grid-template-columns: 40% 5% 55%;
+    font-weight: bold;
+}
+.bm_split_vertically{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.bm_label{
+    font-size: 100%;
+    margin-bottom: 0px;
+}
+#b_modal_body input{
+    width: 72%;
+    height: 4vh;
+    float: right;
+    border-radius: 20%;
+    background: antiquewhite;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+.bm_grid_element{
+    /* border: solid black;
+    border-width: 1px; */
+    align-items: center;
+    justify-content: center;
+}
+.bm_unit{
+    font-size: 70%;
+}

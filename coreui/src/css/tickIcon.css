@@ -1,0 +1,105 @@
+.tickIcon{
+    margin-bottom: 4vh;
+    margin-top: -1.5vh;
+}
+.tickIcon_content{
+    position: relative;
+    width: 6vw;
+    height:6vh;
+    background: #4bfb11;
+    /* background: #2c9a08; */
+    clip-path: polygon(25% 30%, 30% 60%, 40% 45%, 50% 35%, 60% 25%, 70% 18%, 80% 15%, 90% 15%, 100% 15%, 100% 15%,
+                        90% 20%, 80% 25%, 70% 30%, 60% 35%, 50% 45%, 40% 60%, 30% 80%, 20% 40%, 25% 30% );
+    border: solid;
+    animation: tick_bounce 1s linear 0s;
+    /* transform: translateY(5vh); */
+}
+.tickIcon_content span{
+    position: absolute;
+    width: 6vw;
+    height:6vh;
+    background: #4bfb11;
+}
+@keyframes tick_bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    /* 0%{
+        transform: translateY(5vh);
+        background: #4bfb11;
+    }
+    7%{
+        transform:translateY(-4.3vh);
+        background: #2c9a08;
+    }
+    14%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    34%{
+        transform:translateY(-1.6vh);
+        background: #2c9a08;
+    }
+    54%{
+        transform: translateY(5vh);
+        background: #4bfb11;
+    }
+    64%{
+        transform:translateY(1.4vh);
+        background: #2c9a08;
+    }
+    74%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    79%{
+        transform:translateY(2.9vh);
+        background: #2c9a08;
+    }
+    84%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    88%{
+        transform:translateY(3.8vh);
+        background: #2c9a08;
+    }
+    92%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    94%{
+        transform:translateY(4.4vh);
+        background: #2c9a08;
+    }
+    96%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    97%{
+        transform:translateY(4.7vh);
+        background: #2c9a08;
+    }
+    98%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    98.5%{
+        transform:translateY(4.84vh);
+        background: #2c9a08;
+    }
+    99%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    }
+    100%{
+        transform:translateY(5vh);
+        background: #4bfb11;
+    } */
+}

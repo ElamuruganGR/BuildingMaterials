@@ -1,0 +1,178 @@
+/* Navigation bar */
+.side_navbar{
+    width:250px;
+    height:100vh;
+    background: #3e0123;
+    position: absolute;
+    left: -250px;
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+.side_navbar_title{
+    line-height: 60px;
+    text-align: center;
+    color: #c16161;
+    background: #580232;
+    user-select: none;
+    font-size: 18pt;
+    font-family: cursive;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{
+    border-bottom: solid #33011d;
+    border-top:  solid rgba(64, 2, 55, 0.6);
+    list-style: none;
+}
+.side_navbar a{
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 15pt;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-property: all;
+    cursor: pointer;
+    color:lightsteelblue;
+    list-style: none;
+    word-wrap: break-word;
+}
+.side_navbar a:hover{
+    padding-left:15px;
+    transform: scale(2);
+    color: white;
+    text-decoration: none;
+} 
+/* Hamburger Menu icon: */
+.menu_icon{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 2vw;
+    top: 5.5vh;
+    transition-duration: 0.5s;
+    background: #580232;
+    z-index: 1;
+}
+.menu_icon_scale{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 2vw;
+    top: 5.5vh;
+    transition-duration: 0.5s;
+    background: #580232;
+    z-index: 1;
+    animation: menu_scale 0.5s linear 0s infinite;
+}
+@keyframes menu_scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.menu_icon_content{
+    width:30px;
+    height:5px;
+    background: #c16161;
+    border-radius: 40%;
+}
+.menu_icon_content::before, .menu_icon_content::after{
+    content:'';
+    position: absolute;
+    width:30px;
+    height:5px;
+    background: #c16161;
+    border-radius: 40%;
+}
+.menu_icon_content::before{
+    transform: translateY(-10px);
+}
+.menu_icon_content::after{
+    transform: translateY(10px);
+}
+#menu_check{
+    position: absolute;
+    display: none;
+}
+#menu_check:checked ~ .side_navbar{
+    left:0px;
+}
+#menu_check:checked ~ .menu_icon{
+    left:200px;
+    opacity: 0;
+    pointer-events: none;
+}
+#menu_check:checked ~ .cancel_icon{
+    left:220px;
+}
+/* Cancel icon in Navigation bar */
+.cancel_icon{
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left:-220px;
+    top: 20px;
+    z-index: 11;
+    background: #420125; 
+    transition-duration: 0.5s;   
+}
+.cancel_icon_content{
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+.cancel_icon_content::before{
+    content: '';
+    width:15px;
+    height:2px;
+    background: #c16161;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.cancel_icon:hover{
+    transform: scale(1.25);
+}
+/* Background Image */
+.backgroundImage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/Background.jpeg');
+    /* background-position: center; */
+    background-size: cover;
+    transition-duration: 0.5s;
+    position: absolute;
+    z-index: -10;
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+}
+#menu_check:checked ~ .backgroundImage{
+    margin-left: 250px;
+}
+.backgroundImageOverlay{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: -9;
+    transition-duration: 0.5s;
+}
+#menu_check:checked ~ .backgroundImageOverlay{
+    margin-left: 250px;
+}

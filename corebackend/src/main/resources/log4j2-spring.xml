@@ -1,0 +1,40 @@
+x<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration monitorLevel="60">
+    <Properties>
+        <Property name="log-path">logs</Property>
+        <Property name="archieve">${log-path}/archieve</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <File name="File-Appender" fileName="C:/log4j/xmlfilelog.log">
+            <PatternLayout>
+                <Pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+        <RollingFile name="RollingFile-Appender" fileName="C:/log4j/rollingfile.log"
+                     filePattern="C:/log4j/rollingfile.log.%d{yyyy-MM-dd}.gz">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</Pattern">
+                <Policies>
+                    <TimeBasedTriggeringPolicy>
+                        <SizeBasedTriggeringPolicy size="30 MB" />
+                    </TimeBasedTriggeringPolicy>
+                    <DefaultRollOverStrategy max="=30"/>
+                </Policies>
+            </PatternLayout>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.building.materials" level="debug" additivity="false">
+            <AppenderRef ref="File-Appender" level="error"/>
+            <AppenderRef ref="Console-Appender" level="debug"/>
+            <AppenderRef ref="RollingFile-Appender" level="debug"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="Console-Appender" level="debug"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,36 @@
+.hereIcon{
+    margin-bottom: 2vh;
+    transform: translateY(-20px);
+    animation: blink 0.5s ease-in 0s infinite;
+}
+.hereIcon_content{
+    position: relative;
+    width: 3vw;
+    height:7vh;
+    background: #f3ff3f;
+    clip-path: polygon(45% 0, 45% 60%, 0 25%, 50% 100%, 100% 25%, 55% 60%, 55% 0);
+}
+.hereIcon_content span{
+
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    25%{
+        opacity: 0.5;
+        transform: translateY(-14px);
+    }
+    50%{
+        opacity:1;
+        transform: translateY(7px);
+    }
+    75%{
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+    }
+}

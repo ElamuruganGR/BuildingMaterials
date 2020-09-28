@@ -1,0 +1,152 @@
+p {
+    padding: 0px;
+    margin: 0px;
+}
+.wallWrapper{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.wall_header{
+    width: 100vw;
+    height: 15vh;
+    /* border: solid; */
+    /* position: absolute; */
+}
+.wall_header p {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: cursive;
+}
+.wall_body{
+    top: 0vh;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100vw;
+    /* height: 85vh; */
+    padding: 0px;
+    /* border: solid; */
+    /* position: absolute; */
+    display: flex;
+}
+.wall_body .inputContainer{
+    width: 37.5vw;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    /* padding-left: 6vw; */
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    /* padding-right: 6vw; */
+}
+.wall_body .outputContainer{
+    width: 62.5vw;
+    /* border: solid; */
+}
+.wall_body .inputContainer img{
+    margin-top: 2vh;
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.5s;
+}
+.wall_body .inputContainer .element{
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wall_body .inputContainer .blinkingDownArrow{
+    margin-top: 2vh;
+    width: 30px;
+    height: 30px;
+}
+.wall_body .inputContainer img:hover{
+    transform: scale(1.2);
+}
+.wall_body .inputContainer .button{
+    justify-content: start;
+}
+.wall_body .inputContainer .error{
+    margin: 0px;
+    height: 5vh;
+    width: 60%;
+    align-self: center;   
+}
+.wall_body .inputContainer .primary_button{
+    margin-top: 2vh;
+    width: 20%;
+    font-size: 65%;
+}
+.wall_body .outputContainer .output{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.wall_body .outputContainer .output img{
+    width: 100px;
+    height: 100px; 
+    margin-top: 1vh;
+    margin-right: 3vw;
+}
+.wall_body .outputContainer .output .qcm_element{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.wall_body .outputContainer .output .qcm_element .image p{
+    font-weight: bold;
+}
+.wall_body .outputContainer .output .qcm_element .details{
+    margin-top: 0vh;
+    align-self: center;
+}
+.wall_body .outputContainer .output .input_group{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5vh;
+}
+.wall_body .outputContainer .output .input_group .text_box_group{
+    display: flex;
+    flex-direction: row;
+}
+.wall_body .outputContainer .output .output_box{
+    width: 70%;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    outline: none;
+    padding-top: 0.5vh;
+}
+.wall_body .outputContainer .output .outputColor{
+    color: greenyellow;
+}
+.wall_body .outputContainer .output .defaultColor{
+    color: white;
+}
+.wall_body .outputContainer .failure{
+    padding: 0px;
+    margin: 0px;
+    width: 60.5vw;
+    color: red;
+    font-weight: bold;
+}
+.wall_body .outputContainer .failure p{
+    width: 100%;
+    font-size: 1.7vw;
+    padding-right: 2vw;
+    margin-right: 2vw;
+}

@@ -1,0 +1,40 @@
+.blinkingDownArrow{
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blinkingDownArrow span{
+    /* position: absolute; */
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+    /* background: chartreuse; */
+    border-bottom: solid darkorange;
+    border-right: solid darkorange;
+    border-width: 2px;
+    transform: rotate(45deg) translateY(-50%);
+    margin: -6px;
+    animation: blinkAndMove 1s linear 0s infinite;
+}
+.blinkingDownArrow span:nth-child(1){
+    animation-delay: 0.3s;
+}
+.blinkingDownArrow span:nth-child(2){
+    animation-delay: 0.6s;
+}
+.blinkingDownArrow span:nth-child(3){
+    animation-delay: 0.9s;
+}
+@keyframes blinkAndMove{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

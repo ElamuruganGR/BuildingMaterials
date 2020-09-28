@@ -1,0 +1,90 @@
+.plastering_window_dm_container{
+    overflow-y: scroll;
+}
+.modal_heading{
+    height: 12.5%;
+    width: 100%;
+    background: aliceblue;
+    position: relative;
+    font-size: 120%;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    pointer-events: none;
+}
+.similarDimensionWindows{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.similarDimensionLabel{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.similarDimensionWindows label{
+    text-align: center;
+    width: 100%;
+}
+.similarDimensionWindows .colon{
+    width: 10%;
+    height: 10%;
+    align-self: center;
+    font-weight: 500;
+}
+.similarDimensionWindows select{
+    width: 45%;
+    height: 30px;
+    align-self: center;
+    border-radius: 50px;
+    background:#fde2e2;
+    text-align-last: center;
+    font-weight: 700;
+    outline: none;
+}
+.windowsDimensionsTable thead {
+    background: aliceblue;
+    color: orange;
+    font-weight: 700;
+}
+.row_heading{
+    font-weight: 500;
+}
+.windowsDimensionsTable tbody td {
+    background: #fde2e2;
+}
+.windowsDimensionsTable td{
+    border: solid black 1px;
+    width: 22.5%;
+    text-align: center;
+}
+td input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: #fde2e2;
+    text-align: center;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outner-spin-button{
+    opacity: 1;
+}
+.windowsDimensionsTable{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    border: none;
+    width: 90%;  
+}
+.modal_close{
+    margin-top: 7%;
+    margin-left: 5%;
+    /* transform: translateX(-50%); */
+}
+.modal_close .window_dm_close_button{
+    width: 20%;
+    font-weight: 700;
+}

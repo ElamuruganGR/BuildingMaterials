@@ -1,0 +1,73 @@
+<html>
+    <link  rel="stylesheet" type="text/css" href="../css/test.css">
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       /* Navigation bar */
+.side_navbar{
+    width:250px;
+    height:100vh;
+    background: #3e0123;
+    position: absolute;
+    /* left: -250px;
+    transition-duration: 0.5s; */
+}
+.side_navbar_title{
+    line-height: 60px;
+    text-align: center;
+    color: #c16161;
+    background: #580232;
+    user-select: none;
+    font-size: 18pt;
+    font-family: cursive;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{
+    border-bottom: solid #33011d;
+    border-top:  solid rgba(64, 2, 55, 0.6);
+}
+a{
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 15pt;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-property: color, padding-left;
+    cursor: pointer;
+    color:lightsteelblue;
+}
+a:hover{
+    padding-left:15px;
+    color: white;
+} 
+    </style>
+    <body>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu_icon">
+            <div class="menu_icon_content"></div>
+        </label>
+        <label for="check"  class="cancel_icon">
+            <div class="cancel_icon_content"></div>
+        </label>
+        <div class="navbar">
+            <div class="navbar_title">
+                Menu
+            </div>
+            <ul>
+                <li><a href="/home">Home </a></li>
+                <li><a href="/qcWall">WallConstruction</a></li>
+                <li><a href="/qcPlastering">Plastering</a></li>
+            </ul>
+        </div>
+        <div id="box">
+
+        </div>
+        
+    </body>
+</html>

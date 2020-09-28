@@ -1,0 +1,27 @@
+.greenTick{
+    left: 60px;
+    width: 8px;
+    height: 30px;
+    border-bottom: solid forestgreen;
+    border-right: solid forestgreen;
+    transform: skewY(20deg) rotate(45deg);
+    box-shadow: 1px 1px rgba(34,139,34,0.6);            
+}
+.greenTick:after{
+    content:'';
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    border-bottom: solid forestgreen;
+    border-right: solid forestgreen;
+    filter: blur(5px);
+}
+.greenTick:before{
+    content:'';
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    border-bottom: solid forestgreen;
+    border-right: solid forestgreen;
+    filter: blur(10px);
+}

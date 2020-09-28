@@ -1,0 +1,46 @@
+.plastering_areas_options{
+    width: 100vw;
+    height: 5vh;
+    margin-bottom: 3vh ;
+    background: radial-gradient(black, transparent);
+}
+.plastering_areas_options .conditional_button{
+    width: 6vw;
+    background-color: darksalmon;
+    color: black;
+    font-weight: 600;
+}
+.plastering_areas_options .conditional_button:hover{
+    /* color: white; */
+    font-weight: bolder;
+    background-color: #a7654e;
+}
+@media all and (max-width:700px){
+    .plastering_areas_options .conditional_button{
+        width: 8vw;
+    }
+}
+.plastering_area{
+    width: 15%;
+    height: 100%;
+}
+@media all and (max-width:700px){
+    .plastering_area{
+        width: 25%;
+    }
+}.plastering_areas_options .conditional_button{
+    width: 6vw;
+    background-color: darksalmon;
+    color: black;
+    font-weight: 600;
+}
+.plastering_areas_options .conditional_button:hover{
+    /* color: white; */
+    font-weight: bolder;
+    background-color: #a7654e;
+}
+@media all and (max-width:700px){
+    .plastering_areas_options .conditional_button{
+        width: 8vw;
+    }
+}

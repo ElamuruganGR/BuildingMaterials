@@ -1,0 +1,45 @@
+.qcm_element{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    width: 70%;
+}
+@media all and (max-width:900px){
+    .qcm_element{
+        width: 80%;
+    }
+}
+@media all and (max-width:800px){
+    .qcm_element{
+        width: 90%;
+    }
+}
+@media all and (max-width:700px){
+    .qcm_element{
+        width: 96%;
+    }
+}
+@media all and (max-width:600px){
+    .qcm_element{
+        width: 95%;
+    }
+}
+.qcm_heading{
+    font-weight: bold;
+    font-size: 16px;
+}
+.qcm_data{
+    margin-top: 2vh;
+}
+.qcm_quantity,
+.qcm_cost,
+.qcm_element .img_group{
+    display: flex;
+    flex-direction: column;
+}
+.qcm_element .img_group img{
+    width: 100px;
+    height: 100px; 
+    margin-top: 1vh;
+    margin-right: 3vw;
+}

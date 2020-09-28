@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------
+1) Today's Cost: (By default this should be the first call .
+    since all other services are depending on this service input values)
+{
+	"brick":15,
+    "cement":450,
+    "sand":11000,
+    "crushedStones":2000,
+    "bricksWastagePercent":10,
+    "cementInCSM":1,
+    "sandInCSM":6,
+    "totalPartsInCSM":7
+}
+----------------------------------------------------------------------------------------------
